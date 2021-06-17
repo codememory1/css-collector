@@ -1,0 +1,22 @@
+{
+    "name": "codememory/css-collector",
+    "description": "css-collector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Danil",
+            "email": "kostynd1@gmail.com"
+        }
+    ],
+    "require": {
+        "codememory/support": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codememory\\Components\\Collectors\\": ""
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.3"
+    }
+}

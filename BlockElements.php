@@ -42,6 +42,10 @@ class BlockElements
     }
 
     /**
+     * =>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>
+     * Add new html block with css properties
+     * <=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=
+     *
      * @param string $modifier
      * @param array  $styles
      *
@@ -59,6 +63,10 @@ class BlockElements
     }
 
     /**
+     * =>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>
+     * Add html element with css properties using the previously added element modifier
+     * <=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=
+     *
      * @param string $modifier
      * @param array  $styles
      *
@@ -67,13 +75,17 @@ class BlockElements
     public function addBlockToLast(string $modifier, array $styles): BlockElements
     {
 
-        $this->handlerAddElement($this->modifierLastAddedBlock.$modifier, $styles);
+        $this->handlerAddElement($this->modifierLastAddedBlock . $modifier, $styles);
 
         return $this;
 
     }
 
     /**
+     * =>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>
+     * Returns a string with html elements and their css properties
+     * <=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=
+     *
      * @return string|null
      */
     public function getElements(): ?string
@@ -84,6 +96,10 @@ class BlockElements
     }
 
     /**
+     * =>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>=>
+     * Clears the previously added items from memory
+     * <=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=<=
+     *
      * @return $this
      */
     public function clear(): BlockElements
